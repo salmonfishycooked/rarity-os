@@ -27,7 +27,7 @@ SECTION MBR vstart=0x7c00
 						; index starts from 0, so 0x18 = 24, 0x4f = 79
 	int 0x10
 
-;-- the function of three lines below is to get the current position of the cursor. --
+; -- the function of three lines below is to get the current position of the cursor. --
 ;	mov ah, 3			; input: the no.3 sub-function is to get the current position of the cursor, stored in ah
 ;	mov bh, 0			; the bh register stores the page number that is waiting to get.
 ;	int 0x10			; output: ch = the start line of the cursor, cl = the end line of the cursor
